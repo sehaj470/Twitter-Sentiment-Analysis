@@ -4,8 +4,13 @@ from sklearn.feature_extraction.text import TfidfVectorizer
 import re
 from nltk.corpus import stopwords
 from nltk.stem.porter import PorterStemmer
+
+# import nltk
+# nltk.download('stopwords')
+
 import nltk
-nltk.download('stopwords')
+nltk.data.path.append('./nltk_data')
+from nltk.corpus import stopwords
 
 
 import os
